@@ -1,0 +1,570 @@
+{
+  "1920s": {
+    "label": "1920s",
+    "years": "1920–1929",
+    "emoji": "🎷",
+    "tagline": "The Roaring Twenties & The Flapper Revolution",
+    "context": "The 1920s brought seismic cultural shifts. Women won the right to vote in 1920 (19th Amendment), jazz music filled speakeasies, and a new feminine archetype — the flapper — challenged Victorian propriety with bobbed hair, shorter skirts, and public independence. Yet these freedoms were largely for white, middle-class women. Working-class and Black women had long labored outside the home out of economic necessity, with little social reward. Marriage was still the primary social contract for most women; divorce was shameful. Men were expected to be breadwinners, stoic, and authoritative. The KKK resurged, and racial gender norms were enforced through violence.",
+    "gender_norms": {
+      "women": [
+        "Marry young and prioritize homemaking",
+        "Be sexually modest and virtuous (unless you were a 'flapper')",
+        "Defer to husbands in financial and legal matters",
+        "Avoid ambition beyond the domestic sphere",
+        "Embody the 'new woman' ideal: slim, modern, but still marriageable"
+      ],
+      "men": [
+        "Be the sole financial provider for the family",
+        "Display stoic emotional control — no crying, no vulnerability",
+        "Lead the household as the unquestioned authority",
+        "Pursue career ambition as a moral duty",
+        "Maintain masculine appearance; effeminacy was shamed"
+      ]
+    },
+    "dominant_expectations": [
+      "Women's primary identity was wife and mother",
+      "Men who couldn't support a family were seen as failures",
+      "Public displays of non-heterosexuality were criminal",
+      "Women's legal rights were largely tied to their husbands",
+      "Race strictly determined what gender freedoms were available"
+    ],
+    "key_events": [
+      "19th Amendment (1920): Women gain the right to vote",
+      "Prohibition era gives women new public spaces (speakeasies)",
+      "Flapper culture challenges Victorian femininity",
+      "Margaret Sanger opens first birth control clinic (1916, movement grows in 20s)",
+      "First woman elected to U.S. Senate: Rebecca Felton (1922)"
+    ],
+    "cultural_touchstones": [
+      "The Great Gatsby (Fitzgerald, 1925)",
+      "Josephine Baker — Black feminine icon abroad",
+      "Coco Chanel redefines women's fashion",
+      "Buster Keaton and Charlie Chaplin — stoic masculine ideals"
+    ],
+    "dimensions": {
+      "norm_rigidity": 8,
+      "work_access": 3,
+      "political_power": 2,
+      "appearance_pressure": 7,
+      "sexuality_openness": 2,
+      "domestic_expectation": 8
+    }
+  },
+  "1930s": {
+    "label": "1930s",
+    "years": "1930–1939",
+    "emoji": "📰",
+    "tagline": "The Great Depression & The Retreat to Tradition",
+    "context": "The Great Depression devastated the economy and paradoxically hardened gender roles. As men lost jobs, their masculine identity was threatened. Many Americans blamed women workers for 'stealing' jobs from men. Laws were passed in many states barring married women from government jobs. At the same time, women shouldered enormous domestic burdens — stretching scarce resources, managing households under extreme stress — largely invisible and uncompensated. Roosevelt's New Deal programs often excluded women and minorities. The era's cultural message was clear: women belonged in the home, and men who couldn't provide were failures.",
+    "gender_norms": {
+      "women": [
+        "Leave paid work upon marriage (or be seen as selfish)",
+        "Stretch household resources through domestic skill and sacrifice",
+        "Subordinate personal ambitions to family survival",
+        "Embody cheerful resilience regardless of hardship",
+        "Avoid competing with men for scarce employment"
+      ],
+      "men": [
+        "Bear personal shame for unemployment, even in systemic collapse",
+        "Provide financially at all costs — failure to do so was emasculating",
+        "Suppress emotional distress about economic hardship",
+        "Maintain authority even without economic power",
+        "Be the moral and practical head of household"
+      ]
+    },
+    "dominant_expectations": [
+      "Married women should not work if their husband is employed",
+      "Men's worth was inseparable from their earning capacity",
+      "Divorce remained deeply stigmatized",
+      "Homosexuality was criminalized and pathologized",
+      "Breadwinner masculinity was a cultural obsession"
+    ],
+    "key_events": [
+      "Stock market crash (1929) triggers mass unemployment",
+      "Economy Act (1932) bars married women from federal employment",
+      "Frances Perkins becomes first female Cabinet secretary (1933)",
+      "New Deal programs largely exclude domestic and agricultural workers (disproportionately women and minorities)",
+      "Dust Bowl forces massive family migration and stress"
+    ],
+    "cultural_touchstones": [
+      "The Grapes of Wrath (Steinbeck, 1939)",
+      "Dorothea Lange's 'Migrant Mother' photograph",
+      "Shirley Temple — idealized innocent femininity",
+      "Clark Gable — rugged, dominant masculine ideal"
+    ],
+    "dimensions": {
+      "norm_rigidity": 9,
+      "work_access": 2,
+      "political_power": 2,
+      "appearance_pressure": 6,
+      "sexuality_openness": 1,
+      "domestic_expectation": 9
+    }
+  },
+  "1940s": {
+    "label": "1940s",
+    "years": "1940–1949",
+    "emoji": "🏭",
+    "tagline": "World War II & Rosie the Riveter",
+    "context": "World War II forced a dramatic — if temporary — renegotiation of gender roles. With millions of men deployed, women flooded into manufacturing, aviation, and government roles previously barred to them. Rosie the Riveter became a cultural icon, glorifying women's industrial labor. Yet this was framed as a wartime exception, not a permanent change. Black women and women of color did this work with far less recognition. When men returned from the front, immense social pressure pushed women back into the home. Many women who had found economic independence and professional satisfaction were quietly forced out of the workforce. Veterans returning with PTSD received no recognition of their trauma — stoicism was mandatory.",
+    "gender_norms": {
+      "women": [
+        "Sacrifice for the nation by working while men are away",
+        "Be ready to return to the home when men come back",
+        "Support the war effort as wives, mothers, and workers",
+        "Maintain femininity even while doing 'masculine' work",
+        "Greet returning veterans with uncomplicated domestic joy"
+      ],
+      "men": [
+        "Serve militarily as the pinnacle of masculine duty",
+        "Return home as the unquestioned head of household",
+        "Never show fear, trauma, or emotional damage from war",
+        "Resume provider role immediately and without complaint",
+        "Embody strength, heroism, and patriotic sacrifice"
+      ]
+    },
+    "dominant_expectations": [
+      "Women's wartime work was temporary and patriotic, not emancipatory",
+      "Male veterans deserved economic priority upon return",
+      "War trauma in men was suppressed — stoicism was mandatory",
+      "Homosexuality in the military was grounds for dishonorable discharge",
+      "Race-segregated units meant Black men served but were still denied rights"
+    ],
+    "key_events": [
+      "U.S. enters WWII (1941): women enter workforce en masse",
+      "6 million women join the labor force during war years",
+      "Women Airforce Service Pilots (WASPs) fly military aircraft",
+      "G.I. Bill (1944) overwhelmingly benefits returning white male veterans",
+      "Baby boom begins as veterans return and women are pushed home"
+    ],
+    "cultural_touchstones": [
+      "Rosie the Riveter (J. Howard Miller poster, 1943)",
+      "Since You Went Away (1944 film)",
+      "Rita Hayworth — the WWII pin-up ideal",
+      "Humphrey Bogart — the tough, emotionally closed masculine hero"
+    ],
+    "dimensions": {
+      "norm_rigidity": 7,
+      "work_access": 6,
+      "political_power": 3,
+      "appearance_pressure": 7,
+      "sexuality_openness": 1,
+      "domestic_expectation": 7
+    }
+  },
+  "1950s": {
+    "label": "1950s",
+    "years": "1950–1959",
+    "emoji": "🏡",
+    "tagline": "The Postwar Domestic Ideal & The Feminine Mystique",
+    "context": "The 1950s represent the apex of rigid, binary gender norms in 20th-century America. The postwar economic boom funded a suburban ideal: a breadwinner husband, a housewife mother, 2.5 children, a house with a white picket fence. This domestic script was aggressively marketed through television, advertising, and cultural pressure. Betty Friedan would later call the suffocating experience of educated women trapped at home 'the problem with no name.' Women who stepped outside these norms faced social ostracism, psychiatric institutionalization, or both. Meanwhile, men suppressed all emotion and identity outside provider/protector roles. The Lavender Scare led to mass firings of gay federal employees. This era's conformity hid enormous anxiety and dissatisfaction.",
+    "gender_norms": {
+      "women": [
+        "Be a full-time housewife and mother — this is your highest calling",
+        "Support your husband's career unconditionally",
+        "Never outshine your husband intellectually or professionally",
+        "Maintain a perfectly kept home and have dinner ready when he arrives",
+        "Suppress personal ambitions, desires, and dissatisfaction — smile"
+      ],
+      "men": [
+        "Be the sole provider; a wife working implies your failure",
+        "Be emotionally unavailable — stoicism is masculinity",
+        "Lead the family with unquestioned authority",
+        "Conform to the organization man: reliable, corporate, conservative",
+        "Never show any femininity, sensitivity, or homosexual tendencies"
+      ]
+    },
+    "dominant_expectations": [
+      "Marriage was mandatory for respectability; spinsterhood was shameful",
+      "Homosexuality was a psychiatric disorder and criminal offense",
+      "Divorce meant social ruin, especially for women",
+      "Women had almost no reproductive autonomy (no birth control pill until 1960)",
+      "The 'ideal' family was white, suburban, and middle-class"
+    ],
+    "key_events": [
+      "Suburban explosion: Levittown and cookie-cutter domestic life",
+      "Lavender Scare: thousands of gay federal employees fired (1950s)",
+      "Housewife as cultural ideal saturates television and advertising",
+      "Rosa Parks refuses to give up her bus seat (1955)",
+      "Betty Friedan begins research that leads to The Feminine Mystique"
+    ],
+    "cultural_touchstones": [
+      "Leave It to Beaver (1957–1963 TV show)",
+      "The Man in the Gray Flannel Suit (Wilson, 1955)",
+      "Doris Day — wholesome, cheerful domestic femininity",
+      "James Dean — rebel masculinity as counterpoint to conformity"
+    ],
+    "dimensions": {
+      "norm_rigidity": 10,
+      "work_access": 2,
+      "political_power": 2,
+      "appearance_pressure": 9,
+      "sexuality_openness": 1,
+      "domestic_expectation": 10
+    }
+  },
+  "1960s": {
+    "label": "1960s",
+    "years": "1960–1969",
+    "emoji": "✊",
+    "tagline": "The Sexual Revolution & Second-Wave Feminism",
+    "context": "The 1960s cracked the postwar domestic consensus open. The birth control pill (1960) gave women unprecedented reproductive autonomy. Betty Friedan's 'The Feminine Mystique' (1963) named the suffocating domesticity millions felt. The National Organization for Women was founded in 1966. Civil rights movements forced conversations about intersecting oppressions of race and gender. The sexual revolution loosened sexual norms — but often more for men than women, as women who embraced sexual freedom were still labeled as promiscuous. Counterculture movements questioned authority and conformity. The Vietnam War forced reckoning with mandatory masculinity. Yet progress was uneven: abortion remained illegal, and women still faced legal discrimination in credit, housing, and employment.",
+    "gender_norms": {
+      "women": [
+        "The housewife ideal is challenged but still dominant for many",
+        "Education and career ambition becomes more acceptable",
+        "Sexual freedom increasing, but double standard remains fierce",
+        "Expected to be pretty, thin, and fashionable (Twiggy era)",
+        "Black women expected to serve both racial and gender liberation movements"
+      ],
+      "men": [
+        "Traditional breadwinner role is questioned by some, reinforced by others",
+        "Vietnam War: military service as masculine duty vs. conscientious objection",
+        "Counterculture men challenge conformity but often maintain gender hierarchies",
+        "Emotional expression slightly more accepted in some subcultures",
+        "Sexual dominance and conquest remain normalized masculine behaviors"
+      ]
+    },
+    "dominant_expectations": [
+      "Women's liberation is a growing movement but still radical to most Americans",
+      "Birth control gives women agency but is still stigmatized for unmarried women",
+      "Homosexuality remains illegal in most states and classified as mental illness",
+      "The sexual revolution primarily benefited heterosexual men",
+      "Race and gender liberation are inseparable but often treated as separate causes"
+    ],
+    "key_events": [
+      "FDA approves the birth control pill for married women (1960)",
+      "Betty Friedan publishes The Feminine Mystique (1963)",
+      "Equal Pay Act (1963) — largely unenforced but symbolically important",
+      "Civil Rights Act (1964) — includes sex discrimination provision",
+      "NOW (National Organization for Women) founded (1966)",
+      "Stonewall Riots launch LGBTQ+ liberation movement (1969)"
+    ],
+    "cultural_touchstones": [
+      "The Feminine Mystique (Friedan, 1963)",
+      "Twiggy — ultra-thin model redefines femininity",
+      "James Brown — Black masculine pride",
+      "Easy Rider (1969) — masculine freedom and the open road"
+    ],
+    "dimensions": {
+      "norm_rigidity": 7,
+      "work_access": 5,
+      "political_power": 4,
+      "appearance_pressure": 7,
+      "sexuality_openness": 4,
+      "domestic_expectation": 7
+    }
+  },
+  "1970s": {
+    "label": "1970s",
+    "years": "1970–1979",
+    "emoji": "✌️",
+    "tagline": "Women's Liberation & The Fight for Equality",
+    "context": "The 1970s were the height of second-wave feminism. The women's liberation movement was in full force: consciousness-raising groups, protests, and landmark legal victories reshaped American life. Roe v. Wade (1973) secured abortion rights. Title IX (1972) opened sports and education. The Equal Rights Amendment passed Congress in 1972 (though it failed ratification). Ms. Magazine launched. Women entered law, medicine, and business in growing numbers. Men's liberation movements and the early gay rights movement questioned masculine scripts. The gay liberation movement exploded post-Stonewall. Yet backlash was fierce: Phyllis Schlafly organized against ERA, and 'traditional family values' became a political weapon. For women of color, feminist progress often still centered white women's experiences.",
+    "gender_norms": {
+      "women": [
+        "Career ambitions are increasingly legitimate and celebrated",
+        "Reproductive autonomy is a fought-for right",
+        "Sisterhood and solidarity with other women is a value",
+        "Appearance pressure remains but is questioned by feminists",
+        "Sexuality can be expressed more openly — though lesbian identity still risky"
+      ],
+      "men": [
+        "Traditional masculinity is explicitly questioned by men's liberation writers",
+        "Emotional sensitivity becomes slightly more acceptable in some circles",
+        "Gay men have a visible liberation movement for the first time",
+        "Provider identity is challenged as women enter the workforce",
+        "Macho culture and backlash masculinity also intensify in response"
+      ]
+    },
+    "dominant_expectations": [
+      "Women can and should pursue equality, but it's still a radical claim to many",
+      "Gay people are increasingly visible but still face massive discrimination",
+      "Domestic violence and marital rape are barely recognized as crimes",
+      "Men who share domestic labor are seen as unusual or weak",
+      "Race continues to determine access to feminist progress"
+    ],
+    "key_events": [
+      "Roe v. Wade legalizes abortion nationwide (1973)",
+      "Title IX prohibits sex discrimination in education (1972)",
+      "ERA passes Congress, begins unsuccessful ratification battle (1972)",
+      "Ms. Magazine founded by Gloria Steinem (1972)",
+      "First domestic violence shelters open in the U.S.",
+      "Harvey Milk elected as first openly gay official in California (1977)"
+    ],
+    "cultural_touchstones": [
+      "Ms. Magazine and Gloria Steinem",
+      "Billie Jean King defeats Bobby Riggs in 'Battle of the Sexes' (1973)",
+      "Free to Be You and Me (Marlo Thomas, 1972)",
+      "Saturday Night Fever (1977) — disco masculinity"
+    ],
+    "dimensions": {
+      "norm_rigidity": 5,
+      "work_access": 6,
+      "political_power": 5,
+      "appearance_pressure": 5,
+      "sexuality_openness": 6,
+      "domestic_expectation": 5
+    }
+  },
+  "1980s": {
+    "label": "1980s",
+    "years": "1980–1989",
+    "emoji": "💼",
+    "tagline": "Power Suits, AIDS Crisis & The Backlash Years",
+    "context": "The 1980s were a decade of contradiction. Women entered professional life in record numbers, donning power suits and 'having it all' — careers, families, and perfect appearances simultaneously. Yet Susan Faludi would document the 1980s as a decade of backlash: cultural messaging relentlessly told women that feminism had made them unhappy, unmarriageable, and infertile. The AIDS crisis devastated the gay community while Reagan's government ignored it for years — a genocidal indifference rooted in homophobia. Religious conservatism surged with the Moral Majority. 'Family values' became a political code word targeting women's autonomy and LGBTQ+ people. Beauty standards intensified: thinness, youth, and styled femininity were demanded of professional women simultaneously with professional competence.",
+    "gender_norms": {
+      "women": [
+        "'Superwoman' ideal: career + perfect wife + perfect mother simultaneously",
+        "Professional success acceptable but you must also be beautiful and domestic",
+        "Power suits signal authority, but you cannot actually be 'too aggressive'",
+        "Appearance standards are intense: thin, styled, made-up, young",
+        "Reproductive choices face renewed political attack"
+      ],
+      "men": [
+        "Financial success and dominance are the ultimate masculine values",
+        "Emotional vulnerability = weakness; hyper-masculinity resurges (Rambo era)",
+        "Gay men face AIDS-era stigma and renewed social violence",
+        "The 'sensitive man' of the 70s is mocked; machismo returns",
+        "Men who participate in childcare are 'Mr. Moms' — a joke"
+      ]
+    },
+    "dominant_expectations": [
+      "Women can work, but having it 'all' comes at enormous personal cost",
+      "Homosexuality is associated with AIDS, shame, and death in public discourse",
+      "Conservative family values: heterosexual marriage, traditional roles",
+      "The beauty industry explodes: women owe the world thinness and youth",
+      "Crack epidemic and Reagan-era policies devastate communities of color, especially women"
+    ],
+    "key_events": [
+      "Reagan elected; Moral Majority rises; backlash against feminism begins (1980)",
+      "AIDS crisis erupts; Reagan ignores it until 1987",
+      "Sandra Day O'Connor becomes first female Supreme Court Justice (1981)",
+      "Geraldine Ferraro nominated as first female VP candidate (1984)",
+      "Susan Faludi begins research for Backlash (published 1991)",
+      "ACT UP founded in response to AIDS crisis (1987)"
+    ],
+    "cultural_touchstones": [
+      "Working Girl (1988 film)",
+      "Rambo — hypermasculine backlash figure",
+      "Madonna — female sexuality as power and provocation",
+      "Dynasty and Dallas — wealth, power, and gender performance"
+    ],
+    "dimensions": {
+      "norm_rigidity": 6,
+      "work_access": 7,
+      "political_power": 5,
+      "appearance_pressure": 8,
+      "sexuality_openness": 3,
+      "domestic_expectation": 5
+    }
+  },
+  "1990s": {
+    "label": "1990s",
+    "years": "1990–1999",
+    "emoji": "📼",
+    "tagline": "Third-Wave Feminism, Girl Power & The Culture Wars",
+    "context": "The 1990s brought third-wave feminism, which centered personal choice, intersectionality, and reclaiming sexuality as power. 'Girl Power' (popularized by the Spice Girls) and riot grrrl punk rock gave young women assertive identities. The Anita Hill hearings (1991) put workplace sexual harassment on the national stage. The Violence Against Women Act (1994) was landmark legislation. LGBTQ+ visibility grew, with Ellen DeGeneres coming out in 1997. Yet 'don't ask, don't tell' kept military LGBTQ+ identity hidden. Pop culture celebrated hyper-thin beauty standards (heroin chic) while also selling 'empowerment.' Men were still largely expected to embody stoic success, though the 'sensitive man' had small cultural space. Intersectionality became a key feminist concept (coined by Kimberlé Crenshaw in 1989).",
+    "gender_norms": {
+      "women": [
+        "Career ambition is fully normalized for most women",
+        "Girl power: assertiveness and ambition are celebrated (within limits)",
+        "Sexuality can be a source of power — but you can still be slut-shamed",
+        "Extreme thinness and youth remain dominant beauty demands",
+        "Motherhood and career still pitched as an impossible trade-off"
+      ],
+      "men": [
+        "Sensitive New Age Guy (SNAG) exists but is still somewhat mocked",
+        "Emotional expression is slightly more acceptable in close relationships",
+        "Gay identity is increasingly visible, though discrimination remains intense",
+        "Sports and financial success remain the main masculine status markers",
+        "Men who take paternity leave or do primary childcare are still unusual"
+      ]
+    },
+    "dominant_expectations": [
+      "Third-wave feminism says women can do anything — but must also look perfect",
+      "Gay marriage is unthinkable to most Americans; DADT enforces military closet",
+      "Welfare queen stereotype is weaponized against poor women of color",
+      "Violence against women is finally named as a crisis (VAWA, 1994)",
+      "Intersectionality as concept challenges white-centric feminism"
+    ],
+    "key_events": [
+      "Anita Hill testifies at Clarence Thomas hearings (1991)",
+      "Riot grrrl movement and Lilith Fair challenge music industry sexism",
+      "Family and Medical Leave Act (1993) — unpaid, limited",
+      "Violence Against Women Act (1994)",
+      "Ellen DeGeneres publicly comes out (1997)",
+      "Monica Lewinsky scandal exposes sexual double standards in power"
+    ],
+    "cultural_touchstones": [
+      "Spice Girls: 'Wannabe' and girl power marketing",
+      "Thelma & Louise (1991) — female rage and freedom",
+      "Reality Bites (1994) — Generation X disillusionment",
+      "Friends — heteronormative aspirational young adulthood"
+    ],
+    "dimensions": {
+      "norm_rigidity": 5,
+      "work_access": 7,
+      "political_power": 6,
+      "appearance_pressure": 8,
+      "sexuality_openness": 5,
+      "domestic_expectation": 4
+    }
+  },
+  "2000s": {
+    "label": "2000s",
+    "years": "2000–2009",
+    "emoji": "📱",
+    "tagline": "Post-9/11 Culture & Early Social Media Gender Norms",
+    "context": "The 2000s opened with a contested election and were reshaped by 9/11, which produced a surge in hypermasculine militarism and a retreat to 'traditional' gender roles in patriotic imagery. Reality TV exploded, packaging gender performance as entertainment. The early internet and social media began reshaping beauty standards and identity politics. Sarah Palin ran for Vice President, making both feminism's advances and its limits visible. Same-sex marriage became a major cultural battleground, with Massachusetts legalizing it in 2004. Celebrity culture celebrated 'hot mess' femininity (Paris Hilton) alongside 'strong women.' Men's roles were little examined. The phrase 'metrosexual' briefly acknowledged that straight men could care about appearance, but broader masculine emotional expression remained constrained.",
+    "gender_norms": {
+      "women": [
+        "Career is expected, but 'opting out' narrative pressures educated mothers to stay home",
+        "Hypersexualized appearance norms intensify via celebrity and reality TV culture",
+        "Political ambition is increasingly legible but still met with sexist commentary",
+        "Online spaces create new arenas for gender policing and harassment",
+        "Girlboss feminism: individual success as the measure of liberation"
+      ],
+      "men": [
+        "Post-9/11 hypermasculinity: warrior/protector role surges in cultural value",
+        "Metrosexual masculinity gives slight permission for grooming attention",
+        "Emotional vulnerability remains largely private or suppressed",
+        "Video games and the internet create new masculine identity spaces",
+        "Financial success and sexual dominance remain core status markers"
+      ]
+    },
+    "dominant_expectations": [
+      "Gay marriage is debated nationally; most states ban it via constitutional amendments",
+      "Don't Ask Don't Tell keeps LGBTQ+ military members closeted",
+      "Post-9/11 rhetoric reinforces domestic roles for women in contrast to male warriors",
+      "Social media begins amplifying appearance-based judgment of women",
+      "Race and gender intersect in Hurricane Katrina response failures"
+    ],
+    "key_events": [
+      "Massachusetts legalizes same-sex marriage (2004)",
+      "Sarah Palin nominated for VP (2008) — first Republican woman on national ticket",
+      "Facebook (2004) and YouTube (2005) launch, reshaping gender performance online",
+      "Hurricane Katrina exposes racial-gendered poverty (2005)",
+      "Hillary Clinton runs for president (2008), hits 'glass ceiling'",
+      "Obama elected first Black president (2008)"
+    ],
+    "cultural_touchstones": [
+      "Legally Blonde (2001) — feminism as individual girl-boss achievement",
+      "Paris Hilton and celebrity-driven hypersexual femininity",
+      "Grey's Anatomy — women in medicine, complex gender dynamics",
+      "Brokeback Mountain (2005) — gay masculinity breaks into mainstream cinema"
+    ],
+    "dimensions": {
+      "norm_rigidity": 5,
+      "work_access": 8,
+      "political_power": 6,
+      "appearance_pressure": 8,
+      "sexuality_openness": 6,
+      "domestic_expectation": 4
+    }
+  },
+  "2010s": {
+    "label": "2010s",
+    "years": "2010–2019",
+    "emoji": "📲",
+    "tagline": "#MeToo, Marriage Equality & The Gender Revolution",
+    "context": "The 2010s were a decade of accelerating gender and sexuality progress alongside fierce backlash. Same-sex marriage was legalized nationwide in 2015 (Obergefell). Transgender visibility grew dramatically, from Laverne Cox on magazine covers to legal battles over bathroom access. #MeToo (2017) exploded into public consciousness, naming sexual harassment and assault as systemic. Social media became a primary arena for gender politics — calling out, cancel culture, and feminist discourse. Genderqueer and nonbinary identities gained cultural visibility. Yet the 2016 election — with its pussy-grabbing audio and defeat of the first female major-party presidential candidate — revealed the depth of gender-based backlash. Movements like Black Lives Matter centered Black women's leadership and intersectionality.",
+    "gender_norms": {
+      "women": [
+        "Lean In feminism: individual ambition as liberation (but critiqued for ignoring systemic barriers)",
+        "#MeToo names sexual violence in workplaces, entertainment, and everyday life",
+        "Appearance pressure intensifies via Instagram, filtered selfie culture",
+        "Gender-nonconforming and trans women gain visibility and face intense backlash",
+        "Intersectionality increasingly expected in mainstream feminist discourse"
+      ],
+      "men": [
+        "Toxic masculinity becomes a named concept in cultural conversation",
+        "Men's rights backlash and 'men going their own way' movements emerge",
+        "Gay and bi men are increasingly visible and somewhat integrated",
+        "Millennial and Gen Z men show slightly more comfort with emotional expression",
+        "The 'man box' — rigid masculine scripts — is being critically examined"
+      ]
+    },
+    "dominant_expectations": [
+      "Same-sex relationships have full legal recognition — but social acceptance is uneven",
+      "Trans people face bathroom bills, military bans, and political targeting",
+      "Reproductive rights face renewed state-level attack",
+      "Nonbinary gender identity is culturally visible but legally unrecognized in most places",
+      "Performative vs. structural feminism is a live debate"
+    ],
+    "key_events": [
+      "Obergefell v. Hodges: same-sex marriage legalized nationwide (2015)",
+      "Caitlyn Jenner publicly transitions; trans visibility surges (2015)",
+      "#MeToo movement explodes after Harvey Weinstein reporting (2017)",
+      "Women's March (2017) — largest single-day protest in U.S. history",
+      "Record number of women run for and win congressional seats (2018)",
+      "Obama removes Don't Ask Don't Tell (2010)"
+    ],
+    "cultural_touchstones": [
+      "Orange Is the New Black (2013) — gender, race, sexuality in carceral system",
+      "Beyoncé's LEMONADE (2016) — Black feminism and womanhood",
+      "Pose (2018) — trans women of color and ballroom culture",
+      "Fleabag (2016) — raw, unsentimental female interiority"
+    ],
+    "dimensions": {
+      "norm_rigidity": 4,
+      "work_access": 8,
+      "political_power": 7,
+      "appearance_pressure": 7,
+      "sexuality_openness": 8,
+      "domestic_expectation": 3
+    }
+  },
+  "2020s": {
+    "label": "2020s",
+    "years": "2020–present",
+    "emoji": "🌐",
+    "tagline": "Pandemic Reckoning, Gender Fluidity & The Ongoing Struggle",
+    "context": "The early 2020s brought simultaneous progress and rollback. The COVID-19 pandemic exposed deep gender inequality: women bore disproportionate childcare and caregiving burdens, and millions left the workforce. The Supreme Court overturned Roe v. Wade in 2022 (Dobbs), eliminating federal abortion rights after nearly 50 years. Yet nonbinary and gender-fluid identities gained new mainstream acceptance, especially among younger generations. Gen Z is the most gender-expansive generation in recorded history. Trans rights became the frontline of culture war politics. Record numbers of women hold political office. The word 'they' as a singular pronoun gained mainstream legitimacy. The ongoing reckoning includes whether structural change can keep pace with cultural evolution — and whether liberation for some can translate to liberation for all.",
+    "gender_norms": {
+      "women": [
+        "COVID-19 pandemic forces millions of women out of the workforce for caregiving",
+        "Dobbs (2022) eliminates federal abortion rights — reproductive autonomy in crisis",
+        "Record political representation, but systemic barriers remain",
+        "Body positivity movement challenges but hasn't replaced narrow beauty standards",
+        "Mental health and boundaries are more normalized as topics"
+      ],
+      "men": [
+        "Men's mental health is a growing public conversation",
+        "Younger men increasingly reject rigid masculine scripts",
+        "Anti-feminist manosphere (Andrew Tate, incel culture) offers reactionary masculinity",
+        "Trans men and nonbinary AMAB people challenge what 'man' means",
+        "Emotional vulnerability in men is more accepted — but not universally"
+      ]
+    },
+    "dominant_expectations": [
+      "Gender-neutral and nonbinary identities are mainstream for Gen Z but contested politically",
+      "Roe v. Wade overturned: reproductive rights are now a state-by-state patchwork",
+      "Trans rights are under sustained legislative attack in multiple states",
+      "Pandemic has set women's career and economic progress back years",
+      "Pay gap persists; care work is still undervalued and disproportionately done by women"
+    ],
+    "key_events": [
+      "COVID-19 pandemic (2020): women leave workforce at twice the rate of men",
+      "Record number of women serve in 117th Congress",
+      "Dobbs v. Jackson overturns Roe v. Wade (2022)",
+      "Over 500 anti-trans bills introduced across U.S. states (2023)",
+      "Kamala Harris elected first female VP (2020)",
+      "Sam Smith and others popularize nonbinary public identity"
+    ],
+    "cultural_touchstones": [
+      "Euphoria (2019–2022) — gender fluidity among Gen Z",
+      "RuPaul's Drag Race — drag as mainstream entertainment",
+      "Barbie (2023 film) — feminist critique through popular culture",
+      "The Handmaid's Tale as recurring protest imagery post-Dobbs"
+    ],
+    "dimensions": {
+      "norm_rigidity": 3,
+      "work_access": 9,
+      "political_power": 8,
+      "appearance_pressure": 6,
+      "sexuality_openness": 9,
+      "domestic_expectation": 3
+    }
+  }
+}
