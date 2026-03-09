@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 
 # Ensure project root is on the path so sub-packages resolve correctly
@@ -26,30 +27,30 @@ st.markdown(
     /* Typography */
     .gtm-hero-title {
         font-size: 2.6rem; font-weight: 800; text-align: center;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #F26076 0%, #FF9760 55%, #FFD150 100%);
         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         line-height: 1.2; margin-bottom: 0.3rem;
     }
     .gtm-subtitle { font-size: 1.1rem; text-align: center; color: #666; margin-bottom: 1.2rem; }
 
-    /* Era/past sections — warm paper */
+    /* Era/past sections — warm cream */
     .era-card {
-        background: linear-gradient(135deg, #F5ECD7 0%, #E8D5B0 100%);
-        border-left: 4px solid #C4922A;
+        background: #FFF9F0;
+        border-left: 4px solid #458B73;
         border-radius: 10px; padding: 1.2rem 1.4rem; margin: 0.8rem 0;
     }
 
-    /* Future/whatif sections — vibrant */
+    /* Future/whatif sections — coral warmth */
     .whatif-card {
-        background: linear-gradient(135deg, #E8F4FD 0%, #C8E6C9 100%);
-        border-left: 4px solid #2196F3;
+        background: linear-gradient(135deg, #FFF9F0 0%, #FFE8E0 100%);
+        border-left: 4px solid #F26076;
         border-radius: 10px; padding: 1.2rem 1.4rem; margin: 0.8rem 0;
     }
 
     /* Pull-quote */
     .pull-quote {
-        border-left: 5px solid #764ba2;
-        background: #f8f4ff;
+        border-left: 5px solid #458B73;
+        background: #f4faf7;
         padding: 1.2rem 1.5rem;
         border-radius: 0 10px 10px 0;
         font-style: italic;
@@ -58,42 +59,22 @@ st.markdown(
         margin: 1rem 0;
     }
     .pull-quote-attribution {
-        font-style: normal; font-weight: 600; color: #764ba2;
+        font-style: normal; font-weight: 600; color: #458B73;
         margin-top: 0.5rem; font-size: 0.9rem;
     }
 
     /* Micro-copy affirming */
-    .affirm-text { color: #764ba2; font-style: italic; font-size: 0.95rem; text-align: center; margin: 0.5rem 0; }
+    .affirm-text { color: #458B73; font-style: italic; font-size: 0.95rem; text-align: center; margin: 0.5rem 0; }
 
     /* Share card */
     .share-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #F26076 0%, #FF9760 55%, #FFD150 100%);
         color: white; border-radius: 14px;
         padding: 1.5rem 2rem; margin: 1rem 0;
         text-align: center;
     }
     .share-card h3 { color: white; margin-bottom: 0.5rem; }
-    .share-card p { color: rgba(255,255,255,0.9); }
-
-    /* Timeline component */
-    .timeline-bar {
-        display: flex; align-items: center; gap: 0;
-        background: #f0f0f0; border-radius: 30px;
-        padding: 0.4rem 0.8rem; margin-bottom: 1rem;
-        overflow-x: auto;
-    }
-    .timeline-marker {
-        display: inline-flex; flex-direction: column; align-items: center;
-        min-width: 60px; padding: 0.2rem 0.4rem;
-        font-size: 0.7rem; color: #999;
-    }
-    .timeline-marker.active { color: #764ba2; font-weight: 700; }
-    .timeline-marker.birth { color: #C4922A; font-weight: 700; }
-    .timeline-marker.whatif { color: #2196F3; font-weight: 700; }
-    .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #ccc; margin-bottom: 2px; }
-    .timeline-dot.active { background: #764ba2; }
-    .timeline-dot.birth { background: #C4922A; }
-    .timeline-dot.whatif { background: #2196F3; }
+    .share-card p { color: rgba(255,255,255,0.92); }
     </style>
     """,
     unsafe_allow_html=True,
@@ -119,31 +100,10 @@ for key, val in DEFAULTS.items():
     if key not in st.session_state:
         st.session_state[key] = val
 
-# ── Decade image query map ────────────────────────────────────────────────────
-DECADE_IMAGE_QUERIES = {
-    "1920s": ["1920s america", "roaring twenties", "1920s fashion"],
-    "1930s": ["1930s depression era", "1930s america", "1930s family"],
-    "1940s": ["1940s wartime america", "1940s fashion", "world war two home front"],
-    "1950s": ["1950s suburban america", "1950s housewife", "1950s school"],
-    "1960s": ["1960s protest america", "1960s fashion", "civil rights movement"],
-    "1970s": ["1970s america", "1970s fashion", "womens liberation"],
-    "1980s": ["1980s america", "1980s fashion", "1980s school"],
-    "1990s": ["1990s america", "1990s fashion", "grunge 1990s"],
-    "2000s": ["2000s america", "early 2000s fashion", "2000s pop culture"],
-    "2010s": ["2010s america", "social media 2010s", "2010s fashion"],
-    "2020s": ["gender diversity inclusive", "pride community modern", "nonbinary representation"],
-}
-
-
 # ── Navigation helper ─────────────────────────────────────────────────────────
 def go(page: str) -> None:
     st.session_state.page = page
     st.rerun()
-
-
-def get_unsplash_url(query: str, width: int = 400, height: int = 250) -> str:
-    encoded = query.replace(" ", "%20")
-    return f"https://source.unsplash.com/{width}x{height}/?{encoded}"
 
 
 # ── Progress indicator ────────────────────────────────────────────────────────
@@ -164,10 +124,10 @@ def render_progress() -> None:
     for i, (key, label) in enumerate(PAGES):
         with cols[i]:
             if i < current_idx:
-                style = "background:#4CAF50;color:white;"
+                style = "background:#458B73;color:white;"
                 text = f"✓ {label}"
             elif i == current_idx:
-                style = "background:#764ba2;color:white;font-weight:700;"
+                style = "background:#F26076;color:white;font-weight:700;"
                 text = label
             else:
                 style = "background:#e0e0e0;color:#777;"
@@ -179,90 +139,6 @@ def render_progress() -> None:
             )
     st.markdown("<br>", unsafe_allow_html=True)
 
-
-# ── Personal Timeline Component ───────────────────────────────────────────────
-def render_personal_timeline() -> None:
-    """
-    Render an HTML timeline bar showing all decades, birth year, growing-up era,
-    and today marker. Uses inline styles throughout since CSS classes won't apply
-    inside st.markdown HTML.
-    """
-    from core.timeline_engine import load_decades
-
-    all_decades = load_decades()
-    decade_keys = list(all_decades.keys())
-
-    birth_year = st.session_state.get("birth_year")
-    growing_up_decades = st.session_state.get("growing_up_decades", [])
-
-    markers_html = ""
-
-    for dk in decade_keys:
-        decade_data = all_decades[dk]
-        label = decade_data.get("label", dk)
-        emoji = decade_data.get("emoji", "")
-        is_growing_up = dk in growing_up_decades
-        is_today = dk == "2020s"
-
-        if is_today:
-            dot_style = (
-                "width:12px;height:12px;border-radius:50%;"
-                "background:#2196F3;margin-bottom:3px;border:2px solid #1565C0;"
-            )
-            text_style = "font-size:0.68rem;color:#2196F3;font-weight:700;text-align:center;"
-            label_text = f"Today<br>{label}"
-        elif is_growing_up:
-            dot_style = (
-                "width:12px;height:12px;border-radius:50%;"
-                "background:#764ba2;margin-bottom:3px;border:2px solid #4a2d7a;"
-            )
-            text_style = "font-size:0.68rem;color:#764ba2;font-weight:700;text-align:center;"
-            label_text = label
-        else:
-            dot_style = (
-                "width:10px;height:10px;border-radius:50%;"
-                "background:#ccc;margin-bottom:3px;"
-            )
-            text_style = "font-size:0.65rem;color:#aaa;text-align:center;"
-            label_text = label
-
-        markers_html += f"""
-        <div style="display:inline-flex;flex-direction:column;align-items:center;
-                    min-width:65px;padding:0.2rem 0.3rem;">
-            <div style="{dot_style}"></div>
-            <div style="{text_style}">{label_text}</div>
-        </div>
-        """
-
-        # Add connector line between markers
-        if dk != decade_keys[-1]:
-            line_color = "#764ba2" if is_growing_up else "#ddd"
-            markers_html += f"""
-            <div style="flex:1;min-width:8px;height:2px;background:{line_color};
-                        align-self:center;margin-bottom:14px;"></div>
-            """
-
-    # Birth year label below the bar if set
-    birth_label_html = ""
-    if birth_year:
-        birth_label_html = f"""
-        <div style="text-align:center;margin-top:0.3rem;font-size:0.78rem;color:#C4922A;font-weight:600;">
-            ★ Born {birth_year}
-            {(' · Growing up: ' + ', '.join(growing_up_decades)) if growing_up_decades else ''}
-        </div>
-        """
-
-    html = f"""
-    <div style="background:#f7f7f9;border-radius:16px;padding:0.6rem 0.8rem;
-                margin-bottom:0.8rem;overflow-x:auto;">
-        <div style="display:flex;align-items:center;min-width:600px;">
-            {markers_html}
-        </div>
-        {birth_label_html}
-    </div>
-    """
-
-    st.markdown(html.strip(), unsafe_allow_html=True)
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -278,17 +154,15 @@ def page_welcome() -> None:
         unsafe_allow_html=True,
     )
 
-    render_personal_timeline()
     render_progress()
 
     # Pull-quote — creator's statement
     st.markdown(
         """
         <div class="pull-quote">
-            This app was born from a personal realization. Growing up in the late 70s and coming of age
-            in the 80s and 90s as a tomboy, I spent decades not having the language — or the cultural
-            permission — to understand that I was nonbinary and a lesbian. That clarity didn't come until
-            2020. I built the Gender Norms Time Machine to explore a question that still moves me: how
+            This app was born from a personal realization. Growing up surrounded by the heteronormativity of the
+            1980s and 1990s, I didn't realize that I was queer until decades
+            later. I built the Gender Norms Time Machine to explore a question that still moves me: how
             different might my journey have been if I'd grown up with today's visibility, language,
             and representation?
             <div class="pull-quote-attribution">— The Creator</div>
@@ -314,7 +188,6 @@ def page_welcome() -> None:
 
         ---
 
-        *There are no right or wrong answers. This is a space for curiosity, not judgment.*
         """
     )
 
@@ -345,7 +218,6 @@ def page_about_you() -> None:
         unsafe_allow_html=True,
     )
 
-    render_personal_timeline()
     render_progress()
 
     all_decades = load_decades()
@@ -456,10 +328,6 @@ def page_about_you() -> None:
             ] else 0,
         )
 
-        st.markdown(
-            "<p class='affirm-text'>There are no right or wrong answers here.</p>",
-            unsafe_allow_html=True,
-        )
 
     # ── Era at a Glance — renders immediately as birth year changes ───────────
     if birth_year_input:
@@ -482,22 +350,32 @@ def page_about_you() -> None:
                 f"<li style='margin-bottom:0.3rem;'>{fact}</li>" for fact in era_facts
             )
 
-            st.markdown(
-                f"""
-                <div class="era-card" style="margin-top:1rem;">
-                    <h4 style="margin-top:0;color:#8B6914;">Your Era at a Glance</h4>
-                    <p style="margin-bottom:0.6rem;">You grew up across:</p>
-                    <p style="margin-bottom:0.8rem;">{decade_info_html}</p>
-                    <p style="font-weight:600;color:#8B6914;margin-bottom:0.4rem;">
-                        Here's what was happening around gender during those years:
-                    </p>
-                    <ul style="margin:0;padding-left:1.2rem;color:#5a3e10;">
-                        {facts_html}
-                    </ul>
-                </div>
-                """.strip(),
-                unsafe_allow_html=True,
-            )
+            primary_growing_decade = growing_decades[len(growing_decades) // 2]
+            era_image_path = f"images/{primary_growing_decade}.jpg"
+
+            img_col, card_col = st.columns([1, 2])
+            with img_col:
+                try:
+                    st.image(era_image_path, use_container_width=True)
+                except Exception:
+                    pass
+            with card_col:
+                st.markdown(
+                    f"""
+                    <div class="era-card" style="margin-top:0;height:100%;">
+                        <h4 style="margin-top:0;color:#2d6a55;">Your Era at a Glance</h4>
+                        <p style="margin-bottom:0.6rem;">You grew up across:</p>
+                        <p style="margin-bottom:0.8rem;">{decade_info_html}</p>
+                        <p style="font-weight:600;color:#2d6a55;margin-bottom:0.4rem;">
+                            Here's what was happening around gender during those years:
+                        </p>
+                        <ul style="margin:0;padding-left:1.2rem;color:#3a4a42;">
+                            {facts_html}
+                        </ul>
+                    </div>
+                    """.strip(),
+                    unsafe_allow_html=True,
+                )
 
     st.markdown("---")
 
@@ -579,19 +457,8 @@ def page_reflection_questions() -> None:
         unsafe_allow_html=True,
     )
 
-    render_personal_timeline()
     render_progress()
 
-    # ── Atmospheric images ────────────────────────────────────────────────────
-    queries = DECADE_IMAGE_QUERIES.get(primary_decade_key, ["vintage americana", "history", "culture"])
-    img_cols = st.columns(3)
-    for i, query in enumerate(queries[:3]):
-        with img_cols[i]:
-            try:
-                url = get_unsplash_url(query)
-                st.image(url, use_container_width=True)
-            except Exception:
-                pass
 
     # ── Generate questions once ───────────────────────────────────────────────
     if not st.session_state.reflection_questions:
@@ -626,11 +493,6 @@ def page_reflection_questions() -> None:
 
     questions = st.session_state.reflection_questions
 
-    st.markdown(
-        "<p class='affirm-text'>There are no right or wrong answers here. "
-        "Answer based on your own values, feelings, and experience.</p>",
-        unsafe_allow_html=True,
-    )
     st.markdown("")
 
     # ── Reflection form ───────────────────────────────────────────────────────
@@ -687,7 +549,6 @@ def page_results_dashboard() -> None:
     from services.ai_generator import generate_experience_narrative, generate_whatif_narrative
     from visualization.charts import (
         create_timeline_chart,
-        create_norm_radar_chart,
         create_era_vs_2020s_chart,
     )
 
@@ -726,13 +587,7 @@ def page_results_dashboard() -> None:
         unsafe_allow_html=True,
     )
 
-    render_personal_timeline()
     render_progress()
-
-    st.markdown(
-        "<p class='affirm-text'>Your experience is valid regardless of the decade.</p>",
-        unsafe_allow_html=True,
-    )
 
     # ── Generate narratives if not yet generated ──────────────────────────────
     identity_info = {
@@ -806,15 +661,8 @@ def page_results_dashboard() -> None:
         unsafe_allow_html=True,
     )
 
-    tab_timeline, tab_profile = st.tabs(["Century Timeline", "Era Profile"])
-
-    with tab_timeline:
-        timeline_fig = create_timeline_chart(all_decades, primary_decade_key)
-        st.plotly_chart(timeline_fig, use_container_width=True)
-
-    with tab_profile:
-        radar_fig = create_norm_radar_chart(primary_decade_data)
-        st.plotly_chart(radar_fig, use_container_width=True)
+    timeline_fig = create_timeline_chart(all_decades, primary_decade_key)
+    st.plotly_chart(timeline_fig, use_container_width=True)
 
     # Comparison bar: their era vs 2020s
     st.markdown("#### How Much Has Changed Since Your Growing Up Years?")
@@ -862,18 +710,17 @@ def page_results_dashboard() -> None:
         unsafe_allow_html=True,
     )
 
-    # Atmospheric images for 2020s
-    whatif_queries = DECADE_IMAGE_QUERIES.get("2020s", ["gender diversity inclusive", "pride community modern", "nonbinary representation today"])
+    st.markdown(whatif_narrative)
+
+    # Local images for 2020s section
+    whatif_local_images = ["images/nonbinary.jpg", "images/pride_bracelet.jpg", "images/pride_skirt.jpg"]
     whatif_img_cols = st.columns(3)
-    for i, query in enumerate(whatif_queries[:3]):
+    for i, img_path in enumerate(whatif_local_images):
         with whatif_img_cols[i]:
             try:
-                url = get_unsplash_url(query)
-                st.image(url, use_container_width=True)
+                st.image(img_path, use_container_width=True)
             except Exception:
                 pass
-
-    st.markdown(whatif_narrative)
 
     st.markdown("---")
 
@@ -887,7 +734,6 @@ def page_results_dashboard() -> None:
     # Extract first sentence from experience_narrative (strip markdown)
     first_sentence = ""
     if experience_narrative:
-        import re
         clean_text = re.sub(r"[#*_`]", "", experience_narrative)
         parts = clean_text.split(".")
         if parts:

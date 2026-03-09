@@ -19,18 +19,6 @@ def load_decades() -> dict:
         return json.load(f)
 
 
-def get_all_decades() -> list:
-    """Return ordered list of decade keys."""
-    data = load_decades()
-    return list(data.keys())
-
-
-def get_decade_data(decade: str) -> dict:
-    """Return data for a single decade by key (e.g. '1950s')."""
-    data = load_decades()
-    return data.get(decade, {})
-
-
 def build_decade_context(decade_key: str, decade_data: dict) -> str:
     """
     Build a rich, structured text context string suitable for use in AI prompts.
@@ -85,28 +73,6 @@ def build_multi_decade_context(decade_keys: list, all_decades: dict) -> str:
         if key in all_decades:
             parts.append(build_decade_context(key, all_decades[key]))
     return "\n\n---\n\n".join(parts)
-
-
-def compute_century_averages(all_decades: dict) -> dict:
-    """Compute the average score for each dimension across all decades."""
-    dim_keys = list(DIMENSION_DISPLAY.keys())
-    totals = {k: 0.0 for k in dim_keys}
-    count = len(all_decades)
-
-    for data in all_decades.values():
-        dims = data.get("dimensions", {})
-        for k in dim_keys:
-            totals[k] += dims.get(k, 5)
-
-    return {k: round(v / count, 2) for k, v in totals.items()}
-
-
-def get_decade_summary(decade_key: str, decade_data: dict) -> str:
-    """Return a short one-paragraph summary for display in the UI."""
-    return (
-        f"**{decade_data.get('label', decade_key)}: {decade_data.get('tagline', '')}** — "
-        f"{decade_data.get('context', '')[:300]}..."
-    )
 
 
 def calculate_growing_up_decades(birth_year: int) -> list:
