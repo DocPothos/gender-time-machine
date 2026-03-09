@@ -351,7 +351,7 @@ def page_about_you() -> None:
             )
 
             primary_growing_decade = growing_decades[len(growing_decades) // 2]
-            era_image_path = f"images/{primary_growing_decade}.jpg"
+            era_image_path = f"images/{primary_growing_decade}.webp"
 
             img_col, card_col = st.columns([1, 2])
             with img_col:
@@ -713,7 +713,7 @@ def page_results_dashboard() -> None:
     st.markdown(whatif_narrative)
 
     # Local images for 2020s section
-    whatif_local_images = ["images/nonbinary.jpg", "images/pride_bracelet.jpg", "images/pride_skirt.jpg"]
+    whatif_local_images = ["images/nonbinary.webp", "images/pride_bracelet.webp", "images/pride_skirt.webp"]
     whatif_img_cols = st.columns(3)
     for i, img_path in enumerate(whatif_local_images):
         with whatif_img_cols[i]:
